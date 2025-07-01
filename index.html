@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shine On Auto Detailing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000;
+      --text: #e0e0e0;
+      --accent: #ffcc00;
+      --gray: #888;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1a1a1a;
+      background-color: #000;
+    }
+    header h1 {
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 2rem;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover { color: var(--accent); }
+    .hero {
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+    .hero h2 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+    .hero p {
+      font-size: 0.95rem;
+      color: var(--gray);
+      margin-bottom: 1.5rem;
+    }
+    .hero a {
+      background: var(--accent);
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    section.section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section.section h3 {
+      font-weight: 600;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--gray);
+      padding-bottom: 0.5rem;
+      letter-spacing: 1.5px;
+    }
+    .services {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .service-box {
+      flex: 1 1 28%;
+      background: #111;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px #222;
+    }
+    .service-box h4 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .service-box p {
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #222;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shine On Auto Detailing</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#book">Book</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Auto Detailing | Seattle, WA</h2>
+    <p>Precision interior + exterior detailing. Mobile options available.</p>
+    <a href="#book">Book Now</a>
+  </section>
+
+  <section class="section" id="services">
+    <h3>Services</h3>
+    <div class="services">
+      <div class="service-box">
+        <h4>Interior Detail</h4>
+        <p>Seats, carpets, dash, and console deep cleaned and refreshed.</p>
+      </div>
+      <div class="service-box">
+        <h4>Exterior Detail</h4>
+        <p>Hand wash, clay bar, polish & wax. Paint-safe, streak-free finish.</p>
+      </div>
+      <div class="service-box">
+        <h4>Mobile Service</h4>
+        <p>We come to you. Fully equipped for on-site detailing in Seattle.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h3>Gallery</h3>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80" alt="Shiny car hood" />
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Car detail droplets" />
+      <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=400&q=80" alt="Car interior dashboard" />
+    </div>
+  </section>
+
+  <section class="section" id="book">
+    <h3>Book an Appointment</h3>
+    <p style="text-align:center; color: var(--gray); font-size: 0.9rem;">
+      Select a service and schedule online. Fast + easy.
+    </p>
+    <div style="text-align:center; margin-top: 1.5rem;">
+      <a href="https://calendly.com/yourusername" target="_blank" style="background:var(--accent); color:#000; padding:0.75rem 1.5rem; border-radius:4px; text-decoration:none;">Book Now</a>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact</h3>
+    <p style="text-align:center; color: var(--gray); font-size: 0.9rem;">
+      Email: <a href="mailto:contact@shineon.com" style="color: var(--accent); text-decoration:none;">contact@shineon.com</a><br/>
+      Phone: <a href="tel:+12065551234" style="color: var(--accent); text-decoration:none;">(206) 555-1234</a><br/>
+      Address: Seattle, Washington
+    </p>
+  </section>
+</body>
+</html>
